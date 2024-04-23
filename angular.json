@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "google-map:build:production"
+              "buildTarget": "google-map:build:production"
             },
             "development": {
-              "browserTarget": "google-map:build:development"
+              "buildTarget": "google-map:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "google-map:build"
+            "buildTarget": "google-map:build"
           }
         },
         "test": {
@@ -101,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
